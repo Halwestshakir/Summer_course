@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Flip</title>
+  <style>
+    img {
+      width: 200px;
+      transition: transform 0.5s ease;
+      cursor: pointer;
+    }
+
+    .rotated {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the image to flip it!</h2>
+  <img id="flipImage" src="cat.jpg" alt="Placeholder image">
+
+  <script>
+    const img = document.getElementById("flipImage");
+
+    img.addEventListener("click", function() {
+      img.classList.toggle("rotated");
+    });
+  </script>
+
+</body>
+</html>
